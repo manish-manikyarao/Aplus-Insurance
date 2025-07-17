@@ -1,148 +1,139 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aplus Insurance</title>
+  <title>SecureLife Insurance</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f4f8;
-      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
     }
-
     header {
-      background-color: #003366;
+      background-color: #005b96;
+      color: white;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
-    .logo {
+    header h1 {
+      margin: 0;
       font-size: 1.8rem;
-      font-weight: bold;
-      color: #ffffff;
     }
-
     nav a {
-      margin: 0 1rem;
+      color: white;
+      margin-left: 1rem;
       text-decoration: none;
-      color: #ffffff;
-      font-weight: 500;
     }
-
     .hero {
-       background: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
-      padding: 6rem 2rem;
-      text-align: center;
-      color: #ffffff;
-    }
-
-    .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-      text-shadow: 1px 1px 3px #000;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: #e0e0e0;
-      text-shadow: 1px 1px 2px #000;
-    }
-
-    .services {
-      background: url('https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+      height: 400px;
       display: flex;
-      flex-wrap: wrap;
+      align-items: center;
       justify-content: center;
-      padding: 4rem 2rem;
-      color: #ffffff;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      padding: 2rem;
     }
-
-    .service-card {
-      background: rgba(0, 51, 102, 0.85);
+    .section {
+      padding: 2rem;
+      background-color: white;
+      margin: 1rem 2rem;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      margin: 1rem;
-      padding: 2rem;
-      width: 250px;
+    }
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .service {
+      width: 30%;
+      background: #eef;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    .testimonials {
+      font-style: italic;
+      color: #555;
+    }
+    footer {
+      background-color: #005b96;
+      color: white;
       text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .service-card h3 {
-      margin-bottom: 1rem;
-      color: #ffcc00;
-    }
-
-    .service-card p {
-      color: #f0f0f0;
-    }
-
-    .footer {
-      background-color: #001f3f;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
+      padding: 1rem;
       margin-top: 2rem;
     }
-
-    .footer a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
+    @media (max-width: 768px) {
+      .service {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">Aplus Insurance</div>
+    <h1>SecureLife Insurance</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Risk Advisory</a>
-      <a href="#">Insurance</a>
-      <a href="#">Claim</a>
-      <a href="#">Contact</a>
-      <a href="#">Login</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-  
-    <h1>Welcome to Aplus Insurance</h1>
-    <p>Securing your today,safeguarding your tomorrow</p>
-  </section>
-
-  <section class="services">
-    <div class="service-card">
-      <h3>Policies & Cover</h3>
-      <p>Contemporary, commercially competitive insurance solutions.</p>
-    </div>
-    <div class="service-card">
-      <h3>Eligibility</h3>
-      <p>Getting insurance from us.</p>
-    </div>
-    <div class="service-card">
-      <h3>COVID-19 and our policies</h3>
-      <p>Information about how our insurance policies and cover relates to COVID-19.</p>
+    <div>
+      <h2>Protecting What Matters Most</h2>
+      <p>Your trusted partner in life, health, and asset insurance.</p>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Aplus Insurance. All rights reserved.</p>
-    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Life Insurance</h3>
+        <p>Peace of mind for your loved ones with flexible life cover options.</p>
+      </div>
+      <div class="service">
+        <h3>Health Insurance</h3>
+        <p>Comprehensive plans for you and your family's medical needs.</p>
+      </div>
+      <div class="service">
+        <h3>Vehicle Insurance</h3>
+        <p>Reliable coverage for cars, bikes, and commercial vehicles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>Why Choose SecureLife?</h2>
+    <p>With over 20 years of experience and thousands of happy clients, SecureLife is committed to delivering personalized and affordable insurance solutions. We prioritize transparency, claim support, and customer satisfaction.</p>
+  </section>
+
+  <section class="section testimonials">
+    <h2>What Our Clients Say</h2>
+    <p>“SecureLife helped me find the best life cover for my family. The process was smooth and stress-free!” — Anita R.</p>
+    <p>“When I filed a claim for my vehicle damage, they responded quickly and supported me throughout.” — Ravi K.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: support@securelife.com | Phone: +61 123 456 789</p>
+    <p>Visit us: 123 Insurance Lane, Sydney, NSW</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SecureLife Insurance. All rights reserved.</p>
   </footer>
-  <script id="pega-wm-chat" src="https://widget.use1.chat.pega.digital/6892ea12-4230-4a89-921a-d7cb2b389e3e/widget.js"></script>
+
 </body>
 </html>
